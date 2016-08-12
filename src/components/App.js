@@ -1,4 +1,5 @@
 import React from 'react';
+import FolderList from './FolderList'
 
 const data = {
   folders: [ {
@@ -37,9 +38,9 @@ const data = {
 const App = props => {
   return (
     <div>
+      <FolderList folders={data.folders}></FolderList>
     </div>
   );
 };
 
 export default App;
-
