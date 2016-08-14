@@ -37,9 +37,7 @@ const data = {
 
 const App = props => {
   return (
-    <div>
       <FolderList folders={data.folders}></FolderList>
-    </div>
   );
 };
 
