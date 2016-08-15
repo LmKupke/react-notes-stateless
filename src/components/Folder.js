@@ -1,9 +1,8 @@
 import React from 'react';
 
 const Folder = props => {
-  debugger;
   return (
-    <div>
+    <div className="">
       {props.name}
     </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react';
 import FolderList from './FolderList'
+import FolderForm from './FolderForm'
 
 const data = {
   folders: [ {
@@ -37,7 +38,12 @@ const data = {
 
 const App = props => {
   return (
-      <FolderList folders={data.folders}></FolderList>
+      <div className="small-5 foldersection columns">
+        <FolderList folders={data.folders}></FolderList>
+        <div>
+          <FolderForm></FolderForm>
+        </div>
+      </div>
   );
 };
 
