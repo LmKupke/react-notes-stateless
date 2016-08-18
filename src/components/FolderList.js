@@ -4,13 +4,15 @@ import Folder from './Folder'
 const FolderList = props => {
   let folders = props.folders.map(folder => {
     return (
-      <button onClick={event=> alert('Folder Created') }>
-      <Folder
-        key={folder.id}
-        name={folder.name}
-        notes={folder.notes}
-      />
-    </button>
+      <li id={props.id}>
+        <button onClick={event=> alert('Folder Clicked') }>
+        <Folder
+          key={folder.id}
+          name={folder.name}
+          notes={folder.notes}
+        />
+      </button>
+    </li>
     );
   });
   return (
